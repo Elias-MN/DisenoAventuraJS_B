@@ -31,8 +31,37 @@ footer{
 }
 
 .item{
-  background: red;
+  background: var(--accent-color);
   width: 100px;
   height: 100px;
 }
 
+.item img{
+  width: 100%;
+  filter: drop-shadow(2px 4px 3px black);
+}
+
+.item img:hover{
+  transform: scale(1.25);
+}
+
+#scene-1{
+  height: 90%;
+  margin: 32px;
+  background-color: white;
+}
+
+  #scene-1 div:first-child{
+    height: 40%;
+  }
+
+  #scene-1 div:nth-child(2){
+    height: 50%;
+  }
+
+  #scene-1 div:nth-child(3){
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
