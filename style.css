@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: rgb(10, 6, 130);
+  --secondary-color: rgb(226, 226, 226);
+  --accent-color: rgb(186, 0, 180);
+}
+
+body{
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+#inventory-container{
+  background: var(--secondary-color);
+  margin: 5%;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+
+.item{
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
